@@ -1,4 +1,4 @@
 const bloodbathEntries = {
-    entry: "eee",
-    people: "1"
+    entry: ["eee","eeeeee"],
+    people: ["1","3"],
 }
