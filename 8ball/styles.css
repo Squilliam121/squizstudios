@@ -1,0 +1,57 @@
+@font-face {
+    font-family: Sora;
+    src: url(fonts/sora.ttf);
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body{
+    background-image: url(images/bg.png);
+    background-repeat: repeat;
+    background-size: 80%;
+}
+
+#bg{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0e0013de;
+    backdrop-filter: blur(14px);
+    transition: color .3s ease, background-color .3s ease;
+}
+
+#main{
+    background-color: #a770ff37;
+    border: solid #000000b4 10px;
+    padding: 10px;
+    border-radius: 20px;
+    scale: 1;
+    transition: scale .3s ease;
+}
+
+button{
+    width: 500px;
+    height: 80px;
+    border: 0;
+    border-radius: 5px;
+    font-family: Sora;
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 600;
+    background-color: #a770ff00;
+    transition: color .3s ease, background-color .3s ease;
+}
+
+button:hover{
+    background-color: #0b001ddd;
+    color: white;
+}

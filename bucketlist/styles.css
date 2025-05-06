@@ -1,0 +1,244 @@
+@font-face {
+    font-family: Sora;
+    src: url(fonts/sora.ttf);
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    background-image: url("images/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, button{
+    font-family: Sora;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+#footer{
+    text-align: center;
+    font-size: .9rem;
+    margin: 0;
+    position: absolute;
+    bottom: 15px;
+    align-self: center;
+    color: #ffffff;
+    font-weight: 500; 
+    display: block;
+}
+
+.invis{
+    pointer-events: none;
+    opacity: 0;
+}
+
+#main{
+    height: 100%;
+    width: 70%;
+    background-color: #000000c4;
+    backdrop-filter: blur(12px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#list{
+    width: 70%;
+    padding: 0 50px;
+    border: none;
+    border-radius: 12px;
+    background-color: #0000007e;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 500px;
+}
+
+#heading{
+    text-align: center;
+    font-size: 4.4rem;
+    margin: 30px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.listitem{
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px;
+    color: #ffffff;
+    font-weight: 700; 
+    display: block;
+    transition: color .2s ease, text-decoration .2s ease;
+}
+
+.listitem:hover{
+    color: #787878;
+    text-decoration: line-through;
+    cursor: pointer;
+}
+
+#itembutton, #erasebutton{
+    width: auto;
+    height: 60px;
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 700; 
+    background-color: #00000000;
+    border: 0;
+    margin: 16px;
+    transition: background-color .2s ease;
+}
+
+#itembutton:hover, #erasebutton:hover{
+    background-color: #0000006b;
+}
+
+#textmain{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    background-color: #000000c4;
+    backdrop-filter: blur(12px);
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease;
+}
+
+#items{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#goal{
+    font-size: 2.8rem;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center; 
+    align-items: center;
+    margin: 5px;
+}
+
+#message{
+    height: 50px;
+    width: 600px;
+    border: 0;
+    font-family: Sora;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 700;
+    background-color: #000000a3;
+    border-radius: 10px;
+}
+
+#message::placeholder{
+    color: #242424;
+}
+
+#entergoal{
+    width: 600px;
+    height: 50px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 700; 
+    background-color: #000000a3;
+    border: 0;
+    margin: 10px;
+    transition: background-color .2s ease;
+}
+
+#entergoal:hover{
+    background-color: #000000;
+}
+
+#emojimain{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    background-color: #000000c4;
+    backdrop-filter: blur(12px);
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease;
+}
+
+#emoji{
+    font-size: 2.8rem;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center; 
+    align-items: center;
+    margin: 10px;
+}
+
+#enteremoji{
+    width: 170px;
+    height: 50px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 700; 
+    background-color: #000000a3;
+    border: 0;
+    margin: 10px;
+    transition: background-color .2s ease;
+}
+
+#enteremoji:hover{
+    background-color: #000000;
+}
+
+.emoji{
+    background-color: #000000a3;
+    border: 0;
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    font-size: 1.4rem;
+    transition: background-color .2s ease;
+}
+
+.emoji:hover{
+    background-color: #000000 !important;
+}
+
+#emojilist{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 5px;
+}
+
+.divider{
+    height: .6px;
+    background-color: #ffffff;
+    color: white;
+    width: 700px;
+    align-self: center;
+    margin: 0 auto;
+}
