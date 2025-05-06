@@ -55,3 +55,16 @@ button:hover{
     background-color: #0b001ddd;
     color: white;
 }
+
+footer{
+    position: fixed;
+    background-color: none;
+    color: black;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    font-size: 1.3rem;
+    padding: 16px;
+    font-family: Sora;
+    font-weight: 500;
+}
