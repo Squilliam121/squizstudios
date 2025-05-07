@@ -9,7 +9,8 @@ const bloodbathEntries = {
         "PERSON1 runs away from the Cornucopia.",
         "PERSON1 runs from the Cornucopia, tripping over a corpse.",
         "PERSON1 steps on a landmine.",
-        "PERSON1, PERSON2, PERSON3, PERSON4, and PERSON5 team up and gather as many resources as possible."],
+        "PERSON1, PERSON2, PERSON3, PERSON4, and PERSON5 team up and gather as many resources as possible.",
+        "PERSON1 hides in the cornucopia."],
     people: ["1","2","2","1","3","1","2","1","1","1","5"],
 }
 
