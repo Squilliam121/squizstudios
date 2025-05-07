@@ -7,6 +7,13 @@ const bloodbathEntries = {
         "PERSON1 snatches a bottle of alcohol and a rag.",
         "PERSON1 pushes PERSON2 into another tribute, who kills PERSON2.",
         "PERSON1 runs away from the Cornucopia.",
-        "PERSON1 runs from the Cornucopia, tripping over a corpse."],
-    people: ["1","2","2","1","3","1","2","1","1"],
+        "PERSON1 runs from the Cornucopia, tripping over a corpse.",
+        "PERSON1 steps on a landmine.",
+        "PERSON1, PERSON2, PERSON3, PERSON4, and PERSON5 team up and gather as many resources as possible."],
+    people: ["1","2","2","1","3","1","2","1","1","1","5"],
 }
+
+let tributes = ["Gabe","William","Pabbles","Dash","EJ","Eli","Storm","Mitchell","Jambo","Jam","Ollie","WilliamH","Toby","Dehvan","Louis","Keaton","Matthew","Lachie","Pharaoh","Harry","Sean","Zab","Gav","Jack"]
+let tributecount = tributes.length
+
+console.log(tributecount)
