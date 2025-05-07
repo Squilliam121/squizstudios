@@ -18,3 +18,10 @@ let tributes = ["Gabe","William","Pabbles","Dash","EJ","Eli","Storm","Mitchell",
 let tributecount = tributes.length
 
 console.log(tributecount)
+
+function bloodBath() {
+    let current = tributecount
+    do {
+
+    } while (current > 0)
+}
