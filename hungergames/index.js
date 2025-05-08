@@ -299,7 +299,7 @@ const bloodbathEntries = {
 
 const dayEntries = {
     entry: ["PERSON1 picked flowers.",
-        "PERSON1 fought PERSON2, but wasn't successful with murder",
+        "PERSON1 fought PERSON2, but wasn't successful with murder.",
         "PERSON1 kills PERSON2.",
         "PERSON1 finds a bow and a quiver of arrows.",
         "PERSON1, PERSON2, and PERSON3 get into a fight. PERSON1 triumphantly kills them both.",
@@ -328,8 +328,8 @@ const dayEntries = {
 
 const nightEntries = {
     entry: ["PERSON1 stayed up.",
-        "PERSON1 slept through the night",
-        "PERSON1 killed PERSON2 in their sleep",
+        "PERSON1 slept through the night.",
+        "PERSON1 killed PERSON2 in their sleep.",
         "PERSON1 sees a campfire in the distance, but stays back.",
         "PERSON1 sees and visits a campfire, but gets killed by PERSON2.",
         "PERSON1, PERSON2, and PERSON3 sleep in shifts.",
