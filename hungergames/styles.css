@@ -1,0 +1,81 @@
+@font-face {
+    font-family: Sora;
+    src: url(fonts/sora.ttf);
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/bg.png);
+    background-size: 100%;
+    background-repeat: repeat;
+}
+
+#bg{
+    position: absolute;
+    background-color: #292000c9;
+    backdrop-filter: blur(6px);
+    background: linear-gradient(to bottom, #2b2200c9, #1e0c04b1);
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+
+#proceed-btn{
+    border: 0;
+    font-family: Sora;
+    color: rgb(219, 255, 75);
+    background-color: transparent;
+    font-size: 1rem;
+    margin: 0px;
+    font-weight: 600;
+    transition: color .1s ease;
+}
+
+#proceed-btn:hover{
+    color: rgb(160, 200, 0);
+}
+
+h1,h2,h3,h4,h5,h6,p,a{
+    text-decoration: none;
+    text-align: center;
+    font-family: Sora;
+    margin: 0;
+    color: white;
+}
+
+h1{
+    font-size: 3.6rem;
+    margin: 0px;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 1.8rem;
+    margin: 5px;
+    font-weight: 600;
+}
+
+p{
+    font-size: 1.1rem;
+    margin: 2px;
+    font-weight: 500;
+}
+
+.highlight{
+    color: rgb(0, 255, 119);
+}
+
+.dead{
+    color: rgb(255, 91, 91);
+}
