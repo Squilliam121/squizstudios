@@ -355,7 +355,7 @@ let tributecount = tributes.length
 let eventslist = []
 let currentdead = []
 
-function deaths(thisentry, thisperson, personnow) {
+async function deaths(thisentry, thisperson, personnow) {
     const deathConditions = [
         { entry: bloodbathEntries.entry[2], person: "PERSON2" },
         { entry: bloodbathEntries.entry[4], person: "PERSON2" },
@@ -393,7 +393,7 @@ function deaths(thisentry, thisperson, personnow) {
     }
 };
 
-function bloodBath() {
+async function bloodBath() {
     heading.innerText = "Bloodbath"
 
     let current = tributecount
@@ -460,7 +460,7 @@ function bloodBath() {
     bottom.innerHTML += amountremaining
 }
 
-function day() {
+async function day() {
     heading.innerText = stage.replace("day", "Day ");
 
     let current = tributecount
@@ -527,7 +527,7 @@ function day() {
     bottom.innerHTML += amountremaining
 }
 
-function night() {
+async function night() {
     heading.innerText = stage.replace("night", "Night ");
 
     let current = tributecount
