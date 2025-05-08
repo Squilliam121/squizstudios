@@ -46,7 +46,7 @@ body{
     color: rgb(160, 200, 0);
 }
 
-h1,h2,h3,h4,h5,h6,p,a{
+h1,h2,h3,h4,h5,h6,p,a,input{
     text-decoration: none;
     text-align: center;
     font-family: Sora;
@@ -66,6 +66,26 @@ h2{
     font-weight: 600;
 }
 
+h4{
+    font-size: 1.4rem;
+    margin: 5px;
+    font-weight: 600;
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    font-size: 1.4rem;
+    background-color: transparent;
+    border: solid black 3px;
+    border-radius: 6px;
+    margin: 3px;
+}
+
+input::placeholder{
+    color: #777777;
+}
+
 p{
     font-size: 1.1rem;
     margin: 2px;
@@ -78,4 +98,15 @@ p{
 
 .dead{
     color: rgb(255, 91, 91);
+}
+
+#content{
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 90%;
+    gap: 20px;
+    padding: 25px;
+    padding-bottom: 40px;
+    margin: 0;
 }
