@@ -233,6 +233,7 @@ async function newpage() {
         clear();
         stage = "bloodbath"
         content.style.display = "none"
+        startingtributes = JSON.parse(localStorage.getItem("tributes"))
         tributes = startingtributes
         tributecount = tributes.length
         bloodBath()
