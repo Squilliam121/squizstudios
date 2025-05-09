@@ -227,7 +227,17 @@ d12f.addEventListener("keydown", function(event) {
 
 async function newpage() {
     console.log(startingtributes.length)
-    if (stage === "reaping" && startingtributes.length === 24){
+    if (stage === "reaping" && startingtributes.length === 0 && JSON.parse(localStorage.getItem("tributes")).length === 24){
+        localStorage.removeItem('tributes');
+        localStorage.setItem('tributes', JSON.stringify(startingtributes));
+        clear();
+        stage = "bloodbath"
+        content.style.display = "none"
+        tributes = startingtributes
+        tributecount = tributes.length
+        bloodBath()
+        return
+    }else if (stage === "reaping" && startingtributes.length === 24){
         localStorage.removeItem('tributes');
         localStorage.setItem('tributes', JSON.stringify(startingtributes));
         clear();
