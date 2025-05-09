@@ -234,6 +234,7 @@ async function newpage() {
         stage = "bloodbath"
         content.style.display = "none"
         startingtributes = JSON.parse(localStorage.getItem("tributes"))
+        console.log(startingtributes)
         tributes = startingtributes
         tributecount = tributes.length
         bloodBath()
