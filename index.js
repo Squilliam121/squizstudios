@@ -9,3 +9,7 @@ function bucketList() {
 function hungerGames() {
     window.location.href = "hungergames/index.html"
 }
+
+function WYR() {
+    window.location.href = "wouldyourather/index.html"
+}

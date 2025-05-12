@@ -1,0 +1,117 @@
+@font-face {
+    font-family: Sora;
+    src: url(fonts/sora.ttf);
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+#heading{
+    height: 22%;
+    width: 100%; 
+    background-color: #87e9ff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+#main{
+    height: 78%;
+    width: 100%;
+    display: flex;
+}
+
+#firstcontent, #secondcontent{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#firstcontent{
+    background-color: #ff5757;
+    padding: 0 20px;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+#firstcontent:hover{
+    background-color: #ff1818;
+    width: 60%;
+    cursor: pointer;
+}
+
+#firstcontent:hover p, #firstcontent:hover h6{
+    color: #ffffff;
+    font-weight: 800;
+}
+
+#secondcontent{
+    background-color: #6048ff;
+    padding: 0 20px;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+#secondcontent:hover{
+    background-color: #2200ff;
+    width: 60%;
+    cursor: pointer;
+}
+
+#secondcontent:hover p, #secondcontent:hover h6{
+    color: #ffffff;
+    font-weight: 800;
+}
+
+h1{
+    font-family: Sora;
+    color: #001a20;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 700;
+    margin: 0;
+}
+
+p{
+    font-family: Sora;
+    color: #000000d1;
+    font-size: 2.6rem;
+    text-align: center;
+    font-weight: 600;
+    transition: color .5s ease, font-weight .5s ease;
+}
+
+h6{
+    font-family: Sora;
+    color: #000000d1;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    position: absolute;
+    top: calc(50% + 60px);
+    transition: color .5s ease, font-weight .5s ease;
+}
+
+h5{
+    color: #001a20;
+    text-align: center;
+    font-size: 1rem;
+    font-family: Sora;
+    font-weight: 500;
+    margin: 0;
+    margin-top: -8px;
+}
