@@ -7,8 +7,8 @@ const div2 = document.getElementById("secondcontent")
 const firstnum = document.getElementById("firstnum")
 const secondnum = document.getElementById("secondnum")
 
-let redpicked = 0
-let bluepicked = 0
+let redpicked = parseFloat(localStorage.getItem("red"))
+let bluepicked = parseFloat(localStorage.getItem("blue"))
 
 const questions = {
     first: [
@@ -321,6 +321,8 @@ function newQuestion(){
     secondp.innerHTML = questions.second[questionnum]
     firstnum.innerHTML = redpicked
     secondnum.innerHTML = bluepicked
+    localStorage.setItem('red', redpicked);
+    localStorage.setItem('blue', bluepicked);
 }
 
 newQuestion()
