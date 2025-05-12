@@ -7,8 +7,19 @@ const div2 = document.getElementById("secondcontent")
 const firstnum = document.getElementById("firstnum")
 const secondnum = document.getElementById("secondnum")
 
-let redpicked = parseFloat(localStorage.getItem("red"))
-let bluepicked = parseFloat(localStorage.getItem("blue"))
+let redfirst = parseFloat(localStorage.getItem("red"))
+let bluefirst = parseFloat(localStorage.getItem("blue"))
+
+if (isNaN(redfirst)) {
+    redfirst = 0
+}
+
+if (isNaN(bluefirst)) {
+    bluefirst = 0
+}
+
+let redpicked = redfirst
+let bluepicked = bluefirst
 
 const questions = {
     first: [
