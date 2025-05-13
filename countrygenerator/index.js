@@ -5,42 +5,19 @@ const link = document.getElementById("link")
 
 const nameparts = {
     prefix: [
-        "Al",
-        "Bel",
-        "Cor",
-        "Dor",
-        "Eri",
-        "Fen",
-        "Gar",
-        "Hal",
-        "Iri",
-        "Kel",
-        "Lor",
-        "Mor",
-        "Nor",
-        "Ost",
-        "Quel",
-        "Zan"
+        "Al", "Bel", "Cor", "Dor", "Eri", "Fen", "Gar", "Hal", "Iri", "Kel", 
+        "Lor", "Mor", "Nor", "Ost", "Quel", "Zan", 
+        "Bren", "Thal", "Vorn", "Eld", "Ror", "Jor", "Lian", "Zar", "Vek", 
+        "Kael", "Rael", "Ser", "Vas", "Gor", "Thon", "Dren", "Marn"
     ],
     suffix: [
-        "land",
-        "via",
-        "stan",
-        "ia",
-        "ara",
-        "ania",
-        "ara",
-        "ora",
-        "esia",
-        "eria",
-        "oth",
-        "araq",
-        "oria",
-        "or",
-        "ea",
-        "um"
+        "land", "via", "stan", "ia", "ara", "ania", "ara", "ora", "esia", 
+        "eria", "oth", "araq", "oria", "or", "ea", "um", 
+        "eth", "iel", "ar", "in", "en", "is", "an", "arion", "ius", "antha", 
+        "isca", "oria", "ula", "essa", "una", "ira", "anex"
     ]
 };
+
 
 const exports = {
     name: [
