@@ -13,3 +13,7 @@ function hungerGames() {
 function WYR() {
     window.location.href = "wouldyourather/index.html"
 }
+
+function country() {
+    window.location.href = "countrygenerator/index.html"
+}

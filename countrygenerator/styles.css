@@ -1,0 +1,102 @@
+@font-face {
+    font-family: Sora;
+    src: url(fonts/sora.ttf);
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-image: url("images/bg.png");
+    background-repeat: repeat;
+    background-size: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1,h2,h3,h4,h5,h6,p,a{
+    font-family: Sora;
+}
+
+#bg{
+    position: absolute;
+    z-index: -10;
+    backdrop-filter: blur(6px);
+    height: 100%;
+    width: 100%;
+}
+
+#content{
+    height: 100%;
+    width: 70%;
+    background-color: #ffffff77;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+}
+
+#countryname{
+    text-align: center;
+    margin: 0;
+    font-size: 7rem;
+    color: black;
+    font-weight: 700;
+}
+
+#attributes{
+    text-align: center;
+    margin: 0;
+    font-size: 3rem;
+    color: black;
+    font-weight: 600;
+}
+
+#paragraph{
+    text-align: center;
+    margin: 20px;
+    font-size: 2rem;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+#link{
+    margin: 0px auto 0 auto;
+    display: inline-block;
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(0, 35, 4);
+    letter-spacing: normal;
+    font-weight: 600;
+    transition: color .2s ease, letter-spacing .2s ease;
+}
+
+#link:hover{
+    color: rgb(0, 77, 9);
+    letter-spacing: 1em;
+    cursor: pointer;
+    text-align: center;
+}
+
+footer{
+    position: fixed;
+    background-color: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    font-size: 1.3rem;
+    padding: 16px;
+    font-family: Sora;
+    font-weight: 500;
+}

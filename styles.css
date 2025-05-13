@@ -40,13 +40,13 @@ body{
 }
 
 #imgheading{
-    width: 650px;
+    width: 700px;
     height: auto;
 }
 
 #grid{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
 }
 
