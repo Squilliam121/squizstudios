@@ -77,18 +77,18 @@ footer{
     width: 100%;
     bottom: 0;
     font-size: 1.3rem;
-    padding: 16px;
+    padding: 16px 0;
     font-family: Sora;
     font-weight: 500;
 }
 
 @media (max-width: 768px) {
     #imgheading{
-        width: 400px;
+        width: 350px;
         height: auto;
     }
     .website{
-        width: 140px;
+        width: 130px;
         border: solid white 4px;
         border-radius: 10px;
     }
@@ -97,5 +97,12 @@ footer{
     }
     #content{
         padding: 0;
+    }
+    
+    #contentbg{
+        padding: 18px;
+    }
+    footer{
+        padding: 16px 0;
     }
 }
