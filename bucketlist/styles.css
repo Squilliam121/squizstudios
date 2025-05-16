@@ -246,13 +246,15 @@ h1, h2, h3, h4, h5, h6, p, a, button{
 
 @media (max-width: 768px) {
     #heading{
-        font-size: 2.2rem;
+        font-size: 2.4rem;
+        margin: 35px;
     }
     #list{
         padding: 0;
     }
     #itembutton, #erasebutton{
         font-size: 1.4rem;
+        height: 40px;
     }
     #goal{
         font-size: 2.2rem;
