@@ -133,14 +133,19 @@ footer{
     }
     p{
         font-size: 0.9rem;
-        margin: 20px;
+        margin: 10px;
     }
     h1{
         font-size: 3rem;
         margin: 0;
     }
     h2{
-        font-size: 1.3rem;
+        font-size: 1rem;
         margin: 10px;
+        margin: 0;
+    }
+    footer{
+        font-size: 0.8rem;
+        pointer-events: none;
     }
 }
