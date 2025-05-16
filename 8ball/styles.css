@@ -64,7 +64,18 @@ footer{
     width: 100%;
     bottom: 0;
     font-size: 1.3rem;
-    padding: 16px;
+    padding: 16px 0;
     font-family: Sora;
     font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    button{
+        width: 250px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+    #main{
+        border: solid #000000b4 6px;
+    }
 }

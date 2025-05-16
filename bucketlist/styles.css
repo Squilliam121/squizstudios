@@ -66,6 +66,7 @@ h1, h2, h3, h4, h5, h6, p, a, button{
     display: flex;
     flex-direction: column;
     overflow-y: auto;
+    overflow-x: hidden;
     max-height: 500px;
 }
 
@@ -241,4 +242,57 @@ h1, h2, h3, h4, h5, h6, p, a, button{
     width: 700px;
     align-self: center;
     margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    #heading{
+        font-size: 2.2rem;
+    }
+    #list{
+        padding: 0;
+    }
+    #itembutton, #erasebutton{
+        font-size: 1.4rem;
+    }
+    #goal{
+        font-size: 2.2rem;
+    }
+#message{
+    height: 50px;
+    width: 280px;
+    border: 0;
+    font-family: Sora;
+    font-size: 1rem;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 700;
+    background-color: #000000a3;
+    border-radius: 10px;
+}
+
+#entergoal{
+    width: 280px;
+    height: 50px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 700; 
+    background-color: #000000a3;
+    border: 0;
+    margin: 10px;
+    transition: background-color .2s ease;
+}
+
+#entergoal:hover{
+    background-color: #000000;
+}
+.listitem{
+    font-size: 1.4rem;
+}
+#list{
+    width: 80%;
+}
+#main{
+    width: 90%;
+}
 }
