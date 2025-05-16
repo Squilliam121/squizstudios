@@ -81,3 +81,21 @@ footer{
     font-family: Sora;
     font-weight: 500;
 }
+
+@media (max-width: 768px) {
+    #imgheading{
+        width: 400px;
+        height: auto;
+    }
+    .website{
+        width: 140px;
+        border: solid white 4px;
+        border-radius: 10px;
+    }
+    #grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #content{
+        padding: 0;
+    }
+}
