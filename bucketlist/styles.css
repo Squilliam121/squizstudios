@@ -297,4 +297,7 @@ h1, h2, h3, h4, h5, h6, p, a, button{
 #main{
     width: 90%;
 }
+.emoji:hover{
+    background-color: (0, 115, 4)
+}
 }
