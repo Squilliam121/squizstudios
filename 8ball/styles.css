@@ -78,4 +78,7 @@ footer{
     #main{
         border: solid #000000b4 6px;
     }
+    footer{
+        font-size: .9rem;
+    }
 }

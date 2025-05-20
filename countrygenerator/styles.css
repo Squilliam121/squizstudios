@@ -116,4 +116,7 @@ footer{
         padding: 0;
         width: 90%;
     }
+    footer{
+        font-size: .9rem;
+    }
 }
