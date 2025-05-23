@@ -1,5 +1,6 @@
 const cards = document.getElementsByClassName('card');
 const carddiv = document.getElementById('cards')
+const actionbar = document.getElementById('actionbar')
 
 let player1cards = {
     number: [],
@@ -17,21 +18,6 @@ const images = [
     "images/diamond.png",
     "images/heart.png",
 ]
-
-const cardsArray = Array.from(cards); // convert HTMLCollection to real array
-cardsArray.forEach((card, index) => {
-    const timg = card.getElementsByClassName('timg')[0]
-    const bimg = card.getElementsByClassName('bimg')[0]
-    const mimg = card.getElementsByClassName('mimg')[0]
-
-    card.style.animation = `flyIn 0.4s ease-out forwards`;
-    card.style.animationDelay = `${index * 0.1}s`;
-
-    const cardimg = Math.floor(Math.random() * images.length)
-    timg.src = images[cardimg]
-    bimg.src = images[cardimg]
-    mimg.src = images[cardimg]
-});
 
 function newCardAppend(){
     const newCard = document.createElement('div')
@@ -69,13 +55,33 @@ function newCardAppend(){
 
     carddiv.appendChild(newCard);
 
-    const allCards = carddiv.getElementsByClassName('card');
-    const index = allCards.length - 1; // index of new card
     newCard.style.animation = `flyIn 0.4s ease-out forwards`;
-    newCard.style.animationDelay = `${index * 0.1}s`;
+}
+
+function actionBar() {
+    actionbar.classList.add('active')
+}
+
+function actionBarClose() {
+    actionbar.classList.remove('active')
 }
 
 newCardAppend()
 newCardAppend()
 newCardAppend()
 newCardAppend()
+
+const cardsArray = Array.from(cards); // convert HTMLCollection to real array
+cardsArray.forEach((card, index) => {
+    const timg = card.getElementsByClassName('timg')[0]
+    const bimg = card.getElementsByClassName('bimg')[0]
+    const mimg = card.getElementsByClassName('mimg')[0]
+
+    card.style.animation = `flyIn 0.4s ease-out forwards`;
+    card.style.animationDelay = `${index * 0.1}s`;
+
+    const cardimg = Math.floor(Math.random() * images.length)
+    timg.src = images[cardimg]
+    bimg.src = images[cardimg]
+    mimg.src = images[cardimg]
+});

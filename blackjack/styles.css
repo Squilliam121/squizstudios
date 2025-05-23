@@ -32,7 +32,7 @@ body{
     justify-content: center;
 }
 
-h1,h2,h3,h4,h5,h6,p,a{
+h1,h2,h3,h4,h5,h6,p,a,button{
     font-family: Sora;
 }
 
@@ -64,7 +64,7 @@ h1,h2,h3,h4,h5,h6,p,a{
 }
 
 .card:hover{
-    margin-top: -60px;
+    margin-top: -40px;
 }
 
 .card:first-child{
@@ -95,6 +95,67 @@ h1,h2,h3,h4,h5,h6,p,a{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#header{
+    color: white;
+    position: absolute;
+    top: 20px;
+    margin: 0;
+    font-size: 2rem;
+    background-color: transparent;
+    border: 0;
+    font-weight: 700;
+}
+
+#header:hover{
+    pointer-events: pointer;
+}
+
+.hover-text-btn .hover-text {
+  display: none;
+}
+
+.hover-text-btn:hover .default-text {
+  display: none;
+}
+
+.hover-text-btn:hover .hover-text {
+  display: inline;
+}
+
+#headerclose{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 20px;
+    margin: 0;
+    font-size: 2rem;
+    background-color: transparent;
+    border: 0;
+    font-weight: 700;
+}
+
+#headerclose:hover{
+    pointer-events: pointer;
+}
+
+#actionbar{
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 40%;
+    position: absolute;
+    background-color: #fffadb;
+    border-radius: 0 0 40px 40px;
+    transform: rotateX(90deg);
+    transform-origin: top center;
+    transition: all ease .5s;
+}
+
+#actionbar.active{
+    transform: rotateX(0deg);
 }
 
 h6{
