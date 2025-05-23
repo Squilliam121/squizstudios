@@ -3,9 +3,21 @@
     src: url(../fonts/sora.ttf);
 }
 
+@keyframes flyIn {
+    0% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 html, body{
     margin: 0;
     padding: 0;
+    border: 0;
     overflow: hidden;
     width: 100%;
     height: 100%;
@@ -28,7 +40,7 @@ h1,h2,h3,h4,h5,h6,p,a{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #102700d8;
+    background: radial-gradient(ellipse, #000000,#102700d8);
     z-index: -10;
 }
 
@@ -38,6 +50,7 @@ h1,h2,h3,h4,h5,h6,p,a{
 }
 
 .card{
+    transform: translateY(100vh);
     width: 360px;
     height: 504px;
     background-color: #ffffff;
@@ -58,6 +71,32 @@ h1,h2,h3,h4,h5,h6,p,a{
     margin-left: 0;
 }
 
+.timg,.bimg{
+    width: 70px;
+    height: auto;
+    position: absolute;
+}
+
+.timg{
+    top: 60px; 
+    left: 5px;
+}
+
+.bimg{
+    rotate: 180deg;
+    bottom: 60px;
+    right: 5px;
+}
+
+.mimg{
+    width: 350px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 h6{
     color: black;
     margin: 0;
@@ -75,4 +114,17 @@ h6{
     rotate: 180deg;
     bottom: 10px;
     right: 15px;
+}
+
+footer{
+    position: fixed;
+    background-color: none;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    font-size: 1.3rem;
+    padding: 16px;
+    font-family: Sora;
+    font-weight: 500;
 }
