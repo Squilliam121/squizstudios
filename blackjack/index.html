@@ -5,23 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blackjack</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
-<body>
+<body class="p1">
     <div id="bg"></div>
-    <button id="header" class="hover-text-btn" onclick=actionBar()>
+    <button id="header" class="hover-text-btn invisible" onclick=actionBar()>
         <span class="default-text">Player 1</span>
         <span class="hover-text">Click to open</span>
     </button>
-    <div id="cards">
+    <div id="cards" class="invisible">
     </div>
-
+    <h1 id="start">How many players?</h1>
+    <input type="text" id="startinput">
     <div id="actionbar">
+        <button id="hit" onclick=newCardAppend()>
+            <h2>Hit</h2>
+        </button>
+        <button id="stand" onclick=nextPlayer()>
+            <h2>Stay</h2>
+        </button>
 
         <button id="headerclose" class="hover-text-btn" onclick=actionBarClose()>
             <span class="default-text">Player 1</span>
             <span class="hover-text">Click to close</span>
         </button>
     </div>
+    <h3 id="highscore" class="invisible"></h3>
 
     <footer>Made by @squilliam121</footer>
 
