@@ -67,15 +67,15 @@ input{
 
 .card{
     transform: translateY(100vh);
-    width: 360px;
-    height: 504px;
+    width: 300px;
+    height: 420px;
     background-color: #ffffff;
-    border: black solid 20px;
+    border: black solid 15px;
     border-radius: 25px;
     margin: 0;
     padding: 0;
     position: relative;
-    margin-left: -300px;
+    margin-left: -250px;
     transition: all .3s ease;
 }
 
@@ -178,9 +178,10 @@ input{
     margin: 0;
     color: white;
     position: absolute;
-    left: 4%;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 2rem;
-    top: 20px;
+    top: 86%;
     z-index: -5;
 }
 
