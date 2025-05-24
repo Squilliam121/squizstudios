@@ -260,3 +260,91 @@ footer{
 .invisible{
     display: none;
 }
+
+@media (max-width: 768px) {
+    input{
+        width: 320px;
+    }
+    #start{
+        font-size: 2rem;
+    }
+    .card{
+        width: 100px;
+        height: 140px;
+        border: solid black 6px;
+        border-radius: 10px;
+        margin-left: -70px;
+    }
+    .card:first-child{
+        margin-left: 0;
+    }
+    .timg,.bimg{
+        width: 30px;
+        height: auto;
+    }
+
+    .timg{
+        top: 35px; 
+        left: 7px;
+    }
+
+    .bimg{
+        rotate: 180deg;
+        bottom: 35px; 
+        right: 7px;
+    }
+
+    .mimg{
+        width: 60px;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    h6{
+        color: black;
+        margin: 0;
+        padding: 0;
+        font-size: 1.4rem;
+        position: absolute;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    #actionbar{
+        height: 30%;
+    }
+    #hit, #stand{
+        height: 50%;
+    }
+    #highscore{
+        margin: 0;
+        color: white;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.6rem;
+        top: 66%;
+        z-index: -5;
+    }
+    .ttext{
+        top: 10px; 
+        left: 15px;
+    }
+
+    .btext{
+        rotate: 180deg;
+        bottom: 10px;
+        right: 15px;
+    }
+    .default-text, .hover-text{
+        font-size: 1.5rem;
+    }
+    footer{
+        font-size: .9rem;
+    }
+}

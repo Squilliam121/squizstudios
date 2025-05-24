@@ -17,3 +17,7 @@ function WYR() {
 function country() {
     window.location.href = "countrygenerator/index.html"
 }
+
+function blackjack() {
+    window.location.href = "blackjack/index.html"
+}
